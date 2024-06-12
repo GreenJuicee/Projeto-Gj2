@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenJuice</title>
+  <link rel="shortcut icon" href="./assets/favicon-logo1.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <!-- classes expandir o menu responsivo com breakponts - background do nav - menu fixo -->
+    <!-- expand-lg tornar responsivo // fixed-top: fico no topo //  -->
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo-nova.png" alt="logo greenjuice" width="130" height="130" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="" srcset="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <h1>GreenJuice</h1>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacoesnutricionais.html">Informações Nutricionais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Receitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chás</a>
+                  <div class="form-check form-switch">
+                  <!--  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Modo escuro</label> -->
+                  </div>
+                </a>
+              </li>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  
+  <section>
+    <article>
+        <h2><span>Tabela nutricional do abacate</span></h2>
+        <img src="./assets/beneficiosdoabacate-1.jpg" alt="abacate" width="380" height="250">
+        <table border="1" class="table">
+        <p>Na tabela estão indicados os valores nutricionais por cada 100 g de abacate:</p>
+        <thead>
+            <tr>
+                <th>Componentes</th>
+                <th>Quantidade por 100g de abacate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energia</td>
+                <td>114 calorias</td>
+            </tr>
+            <tr>
+               <td>Proteínas</td>
+               <td>1,1 g</td>
+            </tr>
+            <tr>
+                <td>Carboidratos</td>
+                <td>2,3 g</td>
+            </tr>
+            <tr>
+                <td>Gorduras totais</td>
+                <td>10,5 g</td>
+            </tr>
+            <tr>
+                <td>Gorduras monoinsaturadas</td>
+                <td>6,5 g</td>
+            </tr>
+            <tr>
+                <td>Gorduras poli-insaturadas</td>
+                <td>1,2 g</td>
+            </tr>
+            <tr>
+                <td>Ácido linoleico</td>
+                <td>1,1 g</td>
+            </tr>
+            <tr>
+                <td>Gorduras saturadas</td>
+                <td>2,2 g</td>
+            </tr>
+            <tr>
+                <td>Fibras</td>
+                <td>3 g</td>
+            </tr>
+            <tr>
+                <td>Vitamina C</td>
+                <td>3 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina A</td>
+                <td>5 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina E</td>
+                <td>2,1 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B1</td>
+                <td>0,1 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B2</td>
+                <td>0,17 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B3</td>
+                <td>1,1 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B6</td>
+                <td>0,3 mg</td>
+            </tr>
+            <tr>
+                <td>Folatos</td>
+                <td>11 mcg</td>
+            </tr>
+            <tr>
+                <td>Potássio</td>
+                <td>330 mg</td>
+            </tr>
+            <tr>
+                <td>Fósforo</td>
+                <td>36 mg</td>
+            </tr>
+            <tr>
+                <td>Cálcio</td>
+                <td>4 mg</td>
+            </tr>
+            <tr>
+                <td>Magnésio</td>
+                <td>21 mg</td>
+            </tr>
+            <tr>
+                <td>Ferro</td>
+                <td>0,3 mg</td>
+            </tr>
+        </tbody>
+        </table>
+        <p>Para garantir os benefícios do abacate, é importante que seja incluído em uma alimentação saudável e balanceada.</p>
+
+    </article>
+    <article>
+        <h2><span>Tabela nutricional da banana</span></h2>
+        <img src="./assets/banana.jpg" alt="banana" width="380" height="250">
+        <table border="1" class="table">
+
+        <p>A tabela a seguir contém a informação nutricional para cada 100 g de banana madura:</p>
+        <thead>
+            <tr>
+                <th>Componentes</th>
+                <th>Quantidade por 100g de banana</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energia</td>
+                <td>104 calorias</td>
+            </tr>
+            <tr>
+               <td>Proteínas</td>
+               <td>1,6 g</td>
+            </tr>
+            <tr>
+                <td>Carboidratos</td>
+                <td>21,8 g</td>
+            </tr>
+            <tr>
+                <td>Gorduras</td>
+                <td>0,4 g</td>
+            </tr>
+            <tr>
+                <td>Fibras</td>
+                <td>3,1 g</td>
+            </tr>
+            <tr>
+                <td>Vitamina C</td>
+                <td>10 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina A</td>
+                <td>4 mcg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B1</td>
+                <td>0,06 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B2</td>
+                <td>0,07 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B3</td>
+                <td>0,7 mg</td>
+            </tr>
+            <tr>
+                <td>Vitamina B6</td>
+                <td>0,29 mg</td>
+            </tr>
+            <tr>
+                <td>Folatos</td>
+                <td>14 mcg</td>
+            </tr>
+            <tr>
+                <td>Potássio</td>
+                <td>430 mg</td>
+            </tr>
+            <tr>
+                <td>Magnésio</td>
+                <td>28 mg</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>A casca da banana tem o dobro de potássio, podendo ser utilizada em receitas como bolo e brigadeiro.</p>
+    </article>
+    <!-- Adicione mais informações nutricionais aqui -->
+</section>
+
+</body>
+</html>
+
+<section>
+    <article>
+        <h2><span>Tabela nutricional do abacaxi</span></h2>
+        <img src="./assets/abacaxi.webp" alt="abacaxi" width="380" height="250">
+        <table border="1" class="table">
+        <p>A tabela a seguir traz a informação nutricional para 100 g, o que corresponde a 1 fatia grande, de abacaxi fresco:</p>
+        <thead>
+        <tr>
+            <th>Componentes</th>
+            <th>Quantidade por 100g de abacaxi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Energia</td>
+            <td>86 calorias</td>
+        </tr>
+        <tr>
+           <td>Proteínas</td>
+           <td>0,54 g</td>
+        </tr>
+        <tr>
+            <td>Carboidratos</td>
+            <td>13,12 g</td>
+        </tr>
+        <tr>
+            <td>Gorduras</td>
+            <td>0,12 g</td>
+        </tr>
+        <tr>
+            <td>Água</td>
+            <td>86%</td>
+        </tr>
+        <tr>
+            <td>Sódio</td>
+            <td>1 mg</td>
+        </tr>
+        <tr>
+            <td>Fibras</td>
+            <td>3 g</td>
+        </tr>
+        <tr>
+            <td>Vitamina C</td>
+            <td>47,8 mg</td>
+        </tr>
+        <tr>
+            <td>Vitamina B3</td>
+            <td>1,1 mg</td>
+        </tr>
+        <tr>
+            <td>Vitamina B6</td>
+            <td>1,1 mg</td>
+        </tr>
+        <tr>
+            <td>Zinco</td>
+            <td>2,3 mg</td>
+        </tr>
+        <tr>
+            <td>Cobre</td>
+            <td>1,3 mg</td>
+        </tr>
+        <tr>
+            <td>Magnésio</td>
+            <td>12 mg</td>
+        </tr>
+    </tbody>
+    </table>
+        <p>Para aproveitar os benefícios do abacaxi, essa fruta deve fazer parte de uma alimentação equilibrada e saudável, junto com a prática regular de exercícios físicos.</p>
+        <p><a href="#">Leia mais</a></p>
+    </article>
+    <article>
+        <h2><span>Tabela nutricional da maçã</span></h2>
+        <img src="./assets/maça.jpg" alt="maçã" width="380" height="250">
+        <table border="1" class="table">
+        <p>A tabela a seguir traz a composição nutricional de laranja fresca:</p>
+        <thead>
+        <tr>
+            <th>Componentes</th>
+            <th>1 laranja pequena (100g)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Energia</td>
+            <td>48 calorias</td>
+        </tr>
+        <tr>
+           <td>Proteínas</td>
+           <td>1,1 g</td>
+        </tr>
+        <tr>
+            <td>Carboidratos</td>
+            <td>8,9 g</td>
+        </tr>
+        <tr>
+            <td>Gorduras</td>
+            <td>0,2 g</td>
+        </tr>
+        <tr>
+            <td>Betacaroteno</td>
+            <td>120 mcg</td>
+        </tr>
+        <tr>
+            <td>Fibras</td>
+            <td>1,8 g</td>
+        </tr>
+        <tr>
+            <td>Vitamina C</td>
+            <td>57 mg</td>
+        </tr>
+        <tr>
+            <td>Vitamina A</td>
+            <td>20 mcg</td>
+        </tr>
+        <tr>
+            <td>Vitamina B3</td>
+            <td>0,7 mg</td>
+        </tr>
+        <tr>
+            <td>Vitamina B6</td>
+            <td>0,1 mg</td>
+        </tr>
+        <tr>
+            <td>Ácido fólico</td>
+            <td>31 mcg</td>
+        </tr>
+        <tr>
+            <td>Potássio</td>
+            <td>160 mg</td>
+        </tr>
+        <tr>
+            <td>Fósforo</td>
+            <td>19 mg</td>
+        </tr>
+        <tr>
+            <td>Magnésio</td>
+            <td>21 mg</td>
+        </tr>
+        <tr>
+            <td>Zinco</td>
+            <td>0,1 mg</td>
+        </tr>
+    </tbody>
+        </table>
+        <p>É importante ressaltar que para obter todos os benefícios citados acima, a laranja deve fazer parte de uma alimentação variada e saudável, associada à prática regular de exercícios físicos.</p>
+        <p><a href="#">Leia mais</a></p>
+    </article>
+    <!-- Adicione mais notícias aqui -->
+</section>
+</body>
+</html>
+
+<section>
+    <article>
+        <h2><span>Tabela nutricional da batata doce</span></h2>
+        <img src="./assets/batatadoce.jpeg" alt="batata doce" width="380" height="250">
+        <table border="1" class="table">
+        <p>A tabela a seguir traz a informação nutricional de 100 g, o que equivale a 3 colheres de sopa de batata-doce cozida picada:</p>
+        <thead>
+        <tr>
+            <th>Nutrientes</th>
+            <th>3 colheres de sopa de batata doce cozida picada (100g)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td>Proteínas</td>
+           <td>0,6 g</td>
+        </tr>
+        <tr>
+            <td>Carboidratos</td>
+            <td>18,4 g</td>
+        </tr>
+        <tr>
+            <td>Gorduras</td>
+            <td>0,1 g</td>
+        </tr>
+        <tr>
+            <td>Fibras</td>
+            <td>2,2 g</td>
+        </tr>
+        <tr>
+            <td>Vitamina A</td>
+            <td>787 mcg</td>
+        </tr>
+        <tr>
+            <td>Vitamina E</td>
+            <td>0,9 mg</td>
+        </tr>
+        <tr>
+            <td>Betacaroteno</td>
+            <td>9440 mcg</td>
+        </tr>
+        <tr>
+            <td>Vitamina C</td>
+            <td>12,8 mg</td>
+        </tr>
+        <tr>
+            <td>Folato</td>
+            <td>6 mcg</td>
+        </tr>
+        <tr>
+            <td>Potássio</td>
+            <td>148 mg</td>
+        </tr>
+        <tr>
+            <td>Fósforo</td>
+            <td>15 mg</td>
+        </tr>
+        <tr>
+            <td>Cálcio</td>
+            <td>17 mg</td>
+        </tr>
+        <tr>
+            <td>Magnésio</td>
+            <td>18 mg</td>
+        </tr>
+        <tr>
+            <td>Ferro</td>
+            <td>0,7 mg</td>
+        </tr>
+    </tbody>
+        </table>
+        <p>Para se obter os benefícios da batata-doce é fundamental também manter uma alimentação saudável e praticar atividades físicas regularmente.</p>
+        <p><a href="#">Leia mais</a></p>
+    </article>
+    <article>
+        <h2><apan>Tabela nutricional do inhame</apan></h2>
+        <img src="./assets/inhame.webp" alt="inhame" width="380" height="250">
+        <table border="1" class="table">
+        <p></p>
+        <thead>
+        <tr>
+            <th>Nutrientes</th>
+            <th>3 colheres de sopa de batata doce cozida picada (100g)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td>Proteínas</td>
+           <td>0,6 g</td>
+        </tr>
+        <tr>
+            <td>Carboidratos</td>
+            <td>18,4 g</td>
+        </tr>
+        <tr>
+            <td>Gorduras</td>
+            <td>0,1 g</td>
+        </tr>
+        <tr>
+            <td>Fibras</td>
+            <td>2,2 g</td>
+        </tr>
+        <tr>
+            <td>Vitamina A</td>
+            <td>787 mcg</td>
+        </tr>
+        <tr>
+            <td>Vitamina E</td>
+            <td>0,9 mg</td>
+        </tr>
+        <tr>
+            <td>Betacaroteno</td>
+            <td>9440 mcg</td>
+        </tr>
+        <tr>
+            <td>Vitamina C</td>
+            <td>12,8 mg</td>
+        </tr>
+        <tr>
+            <td>Folato</td>
+            <td>6 mcg</td>
+        </tr>
+        <tr>
+            <td>Potássio</td>
+            <td>148 mg</td>
+        </tr>
+        <tr>
+            <td>Fósforo</td>
+            <td>15 mg</td>
+        </tr>
+        <tr>
+            <td>Cálcio</td>
+            <td>17 mg</td>
+        </tr>
+        <tr>
+            <td>Magnésio</td>
+            <td>18 mg</td>
+        </tr>
+        <tr>
+            <td>Ferro</td>
+            <td>0,7 mg</td>
+        </tr>
+    </tbody>
+        </table>
+        <p>Para se obter os benefícios da batata-doce é fundamental também manter uma alimentação saudável e praticar atividades físicas regularmente.</p>
+        <p><a href="#">Leia mais</a></p>
+    </article>
+    <!-- Adicione mais notícias aqui -->
+</section>
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenJuice</title>
+  <link rel="shortcut icon" href="./assets/favicon-logo1.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <!-- classes expandir o menu responsivo com breakponts - background do nav - menu fixo -->
+    <!-- expand-lg tornar responsivo // fixed-top: fico no topo //  -->
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo-nova.png" alt="logo greenjuice" width="130" height="130" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="" srcset="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <h1>GreenJuice</h1>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacoesnutricionais.html">Informações Nutricionais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Receitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chás</a>
+                  <div class="form-check form-switch">
+                    <!--<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"> -->
+                    <!-- <label class="form-check-label" for="flexSwitchCheckDefault">Modo escuro</label> -->
+                  </div>
+                </a>
+              </li>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <section class="banners banners-1 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-5">
+        <h2 class="fw-bold">Bem-vindo</h2>
+        <p>GreenJuice</p>
+      </div>
+    </section>
+
+
+    <!-- SESSÃO TEMAS POPULARES  -->
+    <!-- PARA INSERIR CARDS DO BOOTSTRAP https://getbootstrap.com/docs/4.0/components/card/ -->
+    <!-- Cores de botões https://getbootstrap.com/docs/4.0/components/buttons/ -->
+    <section class="py-5">
+      <h2 class="text-center fw-bold pb-1">Temas Populares</h2>
+
+      <div class="container d-flex justify-content-around flex-wrap">
+
+        <!-- CARD 1 -->
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/nutricao1.jpeg" class="card-img-top"
+            alt="Balcão de padaria tradicional com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title py-2 fw-bold">Nutrição</h5>
+            <p class="card-text">Tudo o que você precisa para fazer uma alimentação saudável,seja para emagrecer ou ganhar peso.
+               Dicas de dieta e suplementação para uma vida saudável em qualquer fase da vida.</p>
+            <a href="#" class="btn btn-primary w-100 fw-bold">Quero detalhes</a>
+          </div>
+        </div>
+        <!-- CARD 2 -->
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/emagrecer (1).jpeg" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Emagrecer</h5>
+            <p class="card-text">Confira as dicas mais valiosas para perder peso e emagrecer de vez! Conteúdos sobre dietas,
+               chás e remédios para que você tenha uma jornada de emagrecimento saudável e equilibrada.</p>
+            <a href="#" class="btn btn-primary w-100 fw-bold mt-3">Quero detalhes</a>
+          </div>
+        </div>
+        <!-- CARD 3 -->
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/exercicio-para-ombro.webp" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Fitness</h5>
+            <p class="card-text">Tudo o que você precisa para alcançar seus objetivos e ter um corpo mais saudável! Aprenda sobre os diferentes tipos de exercícios,
+               planos de treino práticos, técnicas de treinamento e dicas de pré e pós-treino.</p>
+            <a href="#" class="btn btn-primary w-100 fw-bold mt-3">Quero detalhes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- d-flex para exibir textos que está oculto no navbar, organizar em colunas e centralizar // fw-bold para negrito -->
+    <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary text-center py-5">
+        <h2 class="fw-bold">O que você precisa saber!</h2>
+        <p><b>O GreenJuice é um espaço informativo, de divulgação e educação sobre temas relacionados com saúde, nutrição e bem-estar.
+           As informações publicadas não devem ser utilizadas como substituto ao diagnóstico ou tratamento especializado,
+           e não dispensam a consulta com um médico.</b> </p>
+      </div>
+    </section>
+
+
+<!-- CARDS COM IMAGENS DE ALIMENTOS -->
+    <!-- Espaçamentos: https://getbootstrap.com.br/docs/4.1/utilities/spacing/ -->
+    <!-- py-5 é o padding // pb-1 é o padding-bottom para se afastar dos cards inseridos -->
+
+    <section class="py-5">
+
+      <h2 class="fw-bold text-center pb-1">Receitas Exclusivas</h2>
+
+      
+        <!-- inserimos o border-0, btn, text-center, fw-bold -->
+        <!-- Inserção de classe para responsividade  - - class="col-12 col-md-6 col-lg-4" e colunas row-->
+
+        <div class="row">
+
+          <!-- PRIMEIRO CARD DE ALIMENTOS - BOMBOM DE UVA -->
+          <!-- INSERE O data-bs-toggle="modal" data-bs-target="#modal-1 DO MODAL ESCOLHIDO -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1"
+                  style="width: 18rem;">
+                  <img src="./assets/Bombom_Uva.jpg" class="card-img-top" alt="Bombom de uva.">
+                  <div class="card-body">
+                      <h3 class="card-text text-center fw-bold text-nowrap">Bombom de uva</h3>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2"
+                style="width: 18rem;">
+                <img src="./assets/Aveioca_Caprese.jpg" class="card-img-top" alt="Aveioca caprese.">
+                <div class="card-body">
+                    <h3 class="card-text text-center fw-bold text-nowrap">Aveioca caprese</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3"
+              style="width: 18rem;">
+              <img src="./assets/Torta_Liquidificador.jpg" class="card-img-top" alt="Torta.">
+              <div class="card-body">
+                  <h3 class="card-text text-center fw-bold text-nowrap">Torta de milho de<br>liquidificador</h3>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-4"
+            style="width: 18rem;">
+            <img src="./assets/Sopa_fria_ervilha.jpg" class="card-img-top" alt="Sopa de ervilha.">
+            <div class="card-body">
+                <h3 class="card-text text-center fw-bold text-nowrap">Sopa fria de ervilha<br>com hortelã</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-5"
+          style="width: 18rem;">
+          <img src="./assets/Sobrecoxas_assadas_2000x1333.jpg" class="card-img-top" alt="Sobrecoxas e batatas.">
+          <div class="card-body">
+              <h3 class="card-text text-center fw-bold text-nowrap">Sobrecoxas assadas<br>com batatas</h3>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-6"
+        style="width: 18rem;">
+        <img src="./assets/Batata-doce-recheada_2000x1333-1.jpg" class="card-img-top" alt="Batata doce recheada.">
+        <div class="card-body">
+            <h3 class="card-text text-center fw-bold text-nowrap">Batata-doce recheada<br>com frango cremoso</h3>
+        </div>
+    </div>
+</div>
+
+
+          <!-- INSERIR (TROCAR) MAIS CINCO CARDS E MODAIS CORRESPONDENTES QUES ESTÃO NA <DIV> <\DIV> ACIMA -->
+
+    <section class="banners banner-3 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary text-center py-5">
+        <h2 class="fw-bold">Sobre o Blog.</h2>
+        <p><b>O blog GreenJuice tem o objetivo de democratizar o acesso à informação correta e confiável sobre saúde.
+           Dissemine a verdade e o conhecimento sobre saúde.</b></p>
+      </div>
+    </section>
+        
+    
+<!-- INSERIR O FORMS LOCALIZADOS TAMBÉM NO SITE DO BOOTSTRAP  -->
+<!-- py-4: espaçamento da sessão // container: classe de container da sessão do formulário // mx-auto: centralizar // rounded: bolear as bordas // p-3: espaçamento //  -->
+            <section class="py-4 container">
+              <div class="row">
+                <div class="col-10 col-xl-8 mx-auto">
+                  <div class="border border-2 rounded p-3">
+                    <h3 class="fw-bold p-3">Entre em contato!</h3>
+                    <form id="contato">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                        <label for="floatingNome">Nome</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                        <label for="floatingEmail">Email</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                        <label for="floatingTelefone">Telefone</label>
+                      </div>
+                      <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>Preferência de contato:</option>
+                        <option value="1">WhatsApp</option>
+                        <option value="2">Email</option>
+                        <option value="3">Ligação</option>
+                      </select>
+                      <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+                      <input type="range" class="form-range input-range" id="nivel-satisfacao">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Deseja receber novidades por email?
+                        </label>
+                      </div>
+                      <button type="button" class="btn btn-primary w-100 fw-bold mt-3 py-3">Enviar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+      
+            </section>
+      
+            <footer class="text-center bg-body-tertiary">
+              <section class="container p-4 pb-0 mb-4" >
+                <a class="btn" href="#!"><i class="bi bi-whatsapp"></i></a>
+                <a class="btn" href="#!"><i class="bi bi-instagram"></i></a>
+                <a class="btn" href="#!"><i class="bi bi-twitter"></i></a>
+              </section>
+              <nav>
+                <div class="Logo"><img src="./assets/logo-health.png" alt="logo greenjuice" width="100" height="80">
+                </div>  
+                  <a href="politicadeprivacidade.html">Política de Privacidade</a>
+                  <a href="termosdeuso.html">Termos de Uso</a>
+                  <a href="sobre.html">Sobre</a>
+                  <a href=".html"></a>
+                </nav>
+            
+          </footer>
+      
+          
+  </main>
+
+
+  <!-- Modal 1 -->
+  <!-- classes mx-auto: centraliza botão, -->
+
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Bombom de Uva</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Bombom_Uva.jpg" class="w-100" alt="Bombom de uva">
+          <p>Ingredientes
+            1 embalagem de iogurte natural Taeq - 160g
+            1 xícara (chá) de leite em pó desnatado - 100g
+            100g de uva verde orgânica Taeq
+            60g de chocolate 70% cacau</p>
+          <p>Modo de preparo
+            Preparo
+            Em um recipiente, misture o iogurte com o leite em pó e junte as uvas.
+            
+            Distribua em 4 taças de sobremesa e cubra com uma camada fina de chocolate derretido.
+            
+            Deixe o chocolate endurecer antes de servir.
+            
+            Decore com uvas, se desejar.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-primary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 2 -->
+  <!-- classes mx-auto: centraliza botão, -->
+
+  <div class="modal fade" id="modal-2" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Aveioca Caprese</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Aveioca_Caprese.jpg" class="w-100" alt="Aveioca Caprese">
+          <p>Ingredientes
+            2 ovos orgânicos Taeq - 100g
+            3 colheres (sopa) de água - 40g
+            3 colheres (sopa) de aveia flocos finos Taeq - 30g
+            1 pitada de sal
+            1 fio de azeite extravirgem Taeq
+            Ingredientes para o recheio
+            80g de tomate cereja orgânico Taeq cortado em rodelas
+            100g mussarela de búfala cerejinha sem lactose Taeq cortada em rodelas
+            Folhas de manjericão orgânico Taeq a gosto
+            1 fio de azeite Taeq</p>
+          <p>Modo de preparo
+            Preparo
+            Bata bem os ovos com a água e, em seguida, misture a aveia e o sal, mexendo bem.
+            
+            Aqueça uma frigideira antiaderente com um fio de azeite.
+            
+            Despeje metade da massa e deixe dourar dos dois lados em fogo brando.
+            
+            Repita o processo com a outra metade da massa.
+            
+            Recheie as aveiocas com tomate, mussarela e manjericão e regue com um fio de azeite.
+            
+            Dobre-as ao meio e sirva em seguida.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-primary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal 3 -->
+  <!-- classes mx-auto: centraliza botão, -->
+
+  <div class="modal fade" id="modal-3" tabindex="-3" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Torta de milho de liquidificador</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Torta_Liquidificador.jpg" class="w-100" alt="Bombom de uva">
+          <p>Ingredientes para a massa
+            2 espigas de milho verde orgânicas Taeq debulhadas – 240g
+            2 xicaras (chá) de água – 400g
+            ½ xícara (chá) de azeite de oliva extravirgem Taeq – 90g
+            4 ovos orgânicos Taeq – 190g
+            Sal a gosto
+            1 xícara (chá) de amido de milho – 110g
+            1 e ½ xícara (chá) de farinha de trigo integral Taeq – 190g
+            1 colher (sopa) de fermento em pó – 15g
+            Ingredientes para o recheio
+            200g de ricota fresca Taeq esfarelada grosseiramente – 200g
+            2 espigas de milho verde orgânicas Taeq cozidas e debulhadas
+            Salsa picada a gosto
+            Sal a gosto
+            1 colher (sopa) de azeite de oliva extravirgem grego Taeq – 13g</p>
+          <p>Modo de preparo
+            Preparo da massa
+            No liquidificador, bata o milho, a água, o azeite, os ovos e o sal.
+            
+            Transfira para um recipiente e misture aos poucos, o amido, a farinha e o fermento peneirados.
+            
+            Preparo do recheio
+            
+            Em um recipiente, misture todos os ingredientes do recheio.
+            
+            Montagem
+            
+            Em uma assadeira, coloque metade da massa, espalhe todo o recheio e cubra com o restante da massa.
+            
+            Asse em forno preaquecido (200˚C) por cerca de 40 minutos ou até dourar.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-primary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 4 -->
+  <!-- classes mx-auto: centraliza botão, -->
+
+  <div class="modal fade" id="modal-4" tabindex="-4" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Sopa fria de ervilha com hortelã</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Sopa_fria_ervilha.jpg" class="w-100" alt="Bombom de uva">
+          <p>Ingredientes
+            ½ litro de caldo de legumes caseiro - 425g
+            1 pacote de ervilha congelada Taeq - 300g
+            3 colheres (sopa) de creme de ricota Taeq - 54g
+            Sal e pimenta-do-reino moída na hora a gosto
+            ½ xícara (chá) de folhas de hortelã orgânico Taeq - 10g
+            100g de ricota fresca Taeq cortada em pedaços pequenos
+            Fio de azeite extravirgem Taeq
+            Ramos de hortelã orgânico Taeq para decorar</p>
+          <p>Modo de preparo
+            Preparo
+            Em uma panela, ferva o caldo de legumes, junte as ervilhas e cozinhe por 2 minutos.
+            
+            Desligue o fogo, adicione o creme de ricota, tempere com sal e pimenta e misture bem.
+            
+            Reserve e deixe esfriar.
+            
+            Depois de fria, bata no liquidificador com as folhas de hortelã.
+            
+            Distribua a sopa em 4 bowls e distribua pedacinhos de ricota,
+            regue com um fio de azeite e decore com um ramo de hortelã e ervilhas.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-primary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 5 -->
+  <!-- classes mx-auto: centraliza botão, -->
+
+  <div class="modal fade" id="modal-5" tabindex="-5" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Sobrecoxas assadas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Sobrecoxas_assadas_2000x1333.jpg" class="w-100" alt="Bombom de uva">
+          <p>Ingredientes
+            1 pacote de sobrecoxas congeladas Taeq - 700g
+            Sumo de 1 limão orgânico Taeq - 30g
+            Sal e pimenta-do-reino moída na hora a gosto
+            1 colher (chá) de páprica
+            1 colher (chá) de cúrcuma
+            2 colheres (sopa) de molho de tomate orgânico Taeq - 60g
+            400g de batatas orgânicas Taeq cortadas ao meio - 400g
+            4 colheres (sopa) de azeite extra virgem orgânico Taeq - 52g
+            Ramos de alecrim</p>
+          <p>Modo de preparo
+            Preparo
+            Descongele as sobrecoxas de acordo com as instruções da embalagem.
+            Coloque-as em um recipiente e tempere com sumo de limão, sal, pimenta, páprica e cúrcuma.
+            
+            Junte o molho de tomate, mexa para envolver bem os temperos e leve à geladeira por 20 minutos para marinar.
+            Cozinhe as batatas em água fervente com sal até ficarem macias, porém firmes. 
+            
+            Em um refratário redondo, acomode as sobrecoxas e disponha as batatas no centro. 
+            
+            Regue com a marinada e o azeite e disponha os ramos de alecrim.
+            Leve ao forno preaquecido (200˚C) por 40 minutos ou até dourar. </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-primary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 6 -->
+  <!-- classes mx-auto: centraliza botão, -->
+
+  <div class="modal fade" id="modal-6" tabindex="-6" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Batata-doce recheada com frango cremoso</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/Batata-doce-recheada_2000x1333-1.jpg" class="w-100" alt="Bombom de uva">
+          <p>Ingredientes
+            2 batatas doces grandes orgânicas Taeq - 820g
+            200g de peito de frango congelado Taeq - 200g
+            1 colher (sopa) de azeite extra virgem orgânico Taeq - 13g
+            1 cebola orgânica Taeq picada - 45g
+            1 pitada de páprica doce
+            1 pitada de cúrcuma
+            1 pitada de sal
+            Pimenta-do-reino moída na hora a gosto
+            3 colheres (sopa) de creme de ricota Taeq - 90g
+            Salsa orgânica Taeq picada a gosto
+            1 fatia de pão de forma integral Taeq torrada</p>
+          <p>Modo de preparo
+            Preparo
+            Fure as batatas com um garfo para assá-las por inteiro, sem rachar.
+            Coloque-as em uma assadeira e asse em forno preaquecido (200˚C) por 45 minutos ou até que fiquem macias. Reserve. 
+            
+            Cozinhe o frango em água fervente com sal, escorra e desfie. Reserve. 
+            
+            Em uma frigideira antiaderente, aqueça o azeite e refogue a cebola até murchar. 
+            
+            Junte o frango desfiado, tempere com páprica, cúrcuma, sal e pimenta. 
+            
+            Desligue o fogo e misture bem o creme de ricota e a salsa.
+            Com uma faca faça um corte no comprimento das batatas e junte as extremidades com as mãos para abrir o corte e poder recheá-las. 
+            
+            Com um garfo, raspe a polpa das batatas para soltar da casca e recheie com o frango.
+            Esfarele a torrada com as mãos até obter uma farinha de rosca grossa.
+            
+            Polvilhe a farinha sobre as batatas, regue com um fio de azeite e volte ao forno por mais 10 minutos.
+            Retire do forno e sirva em seguida. </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-primary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+          <!-- link bootstramp jscript -->
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+  --bege: #E6E0D6;
+  --verde-escuro: #2E8B57;
+  --verde-claro: #92FFC0;
+  font-family: 'Barlow', sans-serif;
+  
+  height: 4000px; /* Aumentar o tamanho da tela para aparecer a barra de rolagem */
+}
+
+.div class offcanvas-header{
+  background-color:#92FFC0;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+
+}
+
+h1{
+  color: #2E8B57;
+  font-family: 'Playball', regular;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav a {
+  color: #00714C;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/*input[type=checkbox] {
+  border: 2px solid var(--verde-claro);
+  box-shadow: none;
+}*/
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--verde-claro);
+  border-color: var(--verde-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banners-1{
+  background-image: url(./assets/banner-health-1.jpeg);
+}
+
+.banners{
+/* Para a imagem da classe .banners-1 ser exibida é necessário definir width e height */
+width: 100%;
+height: 100vh;
+/* Para a imagem não se repetir */
+background-repeat: no-repeat; 
+/* para a imagem ocupar todo o espaço da tela */
+background-size: cover;
+/* para centralizar a imagem */
+background-position: center;
+/* A tela foi aumentanda para height de 4000px, aparecerá a barra de rolagem, então para fixar a imagem (chaamado de Parallax) */
+background-attachment: fixed;
+}
+
+.banners-titulo {
+  /* testar a opacidade com valores 0, 1 também */
+  --bs-bg-opacity: .7;
+}
+
+.banner-2{
+  background-image: url(./assets/banner-2.jpg);
+}
+
+.banner-3{
+  background-image: url(./assets/banner-frutas-3.jpg);
+}
